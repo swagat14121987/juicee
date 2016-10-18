@@ -1,0 +1,17 @@
+<div class="header">
+  <div class="container">
+      <h1>Juicee</h1>
+      <ul>
+        <li>
+          <!-- <fa fa name="times" border=true></fa> -->
+        </li>
+      </ul>
+  </div>
+</div>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <juicee-menu-item class="col-lg-3 col-md-3 col-sm-6 col-xs-12" (AddCart)="onAddCart($event)" (RemoveCart)="onRemoveCart($event)" *ngFor="let item of Menu.Menu" [item]='item'></juicee-menu-item>
+    </div>
+  </div>
+</div>
