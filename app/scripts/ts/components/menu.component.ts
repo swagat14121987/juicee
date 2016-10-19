@@ -14,6 +14,19 @@ export class MenuComponent {
       orderId:'JUC001',
       items:[]
     };
+    NewItem:MenuItem = {
+      id: 0,
+      name: "",
+      image: 'app/images/juice.png',
+      shop: false,
+      desc: ""
+    }
+    addItem(title,desc) {
+      this.NewItem.name = title;
+      this.NewItem.desc = desc;
+      this.Menu.Menu.push(this.NewItem);
+      console.log(this.Menu);
+    }
     onAddCart(data:MenuItem){
       this.OrderCart.items.push(data);
     }

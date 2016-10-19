@@ -4,6 +4,7 @@ import { GuideComponent } from '../components/guide.component';
 import { MenuComponent } from '../components/menu.component';
 import { AppComponent } from '../components/app.component';
 import { FaComponent } from '../components/fa.component';
+import { AddItemComponent } from '../components/additem.component';
 
 const appRoutes: Routes = [
     {
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
     {
         path: 'guide',
         component: GuideComponent
+    },
+    {
+        path: 'additem',
+        component: AddItemComponent
     }
 ]
 

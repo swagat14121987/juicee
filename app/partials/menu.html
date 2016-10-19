@@ -1,11 +1,37 @@
 <div class="header">
   <div class="container">
-      <h1>Juicee</h1>
+      <!-- <h1>Juicee</h1>
       <ul>
         <li>
-          <!-- <fa fa name="times" border=true></fa> -->
+
         </li>
-      </ul>
+      </ul> -->
+      <div class="row">
+        <div class="container">
+          <div class="row">
+              <h1>Add Menu Item</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              Title
+            </div>
+            <div class="col-md-6">
+              <input #title class="col-xs-12 col-sm-12 col-md-12" name="title">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              Description
+            </div>
+            <div class="col-md-6">
+              <input #desc class="col-xs-12 col-sm-12 col-md-12" name="desc">
+            </div>
+          </div>
+          <div class="row">
+            <button (click)="addItem(title.value, desc.value)">Add</button>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 <div class="content">
